@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Lexend Deca", "Arial", sans-serif;
+  font-weight: 400;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+img {
+  display: block;
+}
+
+.hero-wrapper {
+  padding-top: 100px;
+}
+
+.hero-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.hero-items {
+  width: 308px;
+  padding: 48px;
+  background-color: #e28625;
+  border-radius: 8px;
+}
+
+.hero-items::before {
+  display: inline-block;
+  background-image: url("./images/icon-sedan-min.svg");
+  width: 64px;
+  height: 40px;
+  margin-bottom: 35px;
+  content: "";
+}
+
+.hero-items:nth-child(2) {
+  background-color: #006971;
+}
+
+.hero-items:nth-child(2)::before {
+  background-image: url("./images/icon-suv-min.svg");
+  background-repeat: no-repeat;
+}
+
+.hero-items:nth-child(3) {
+  background-color: #004140;
+}
+
+.hero-items:nth-child(3)::before {
+  background-image: url("./images/icon-luxury-min.svg");
+  background-repeat: no-repeat;
+}
+
+.hero-title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", "Arial", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #f2f2f2;
+}
+
+.hero-desc {
+  margin-top: 0;
+  margin-bottom: 83px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #fff;
+}
+
+.hero-link {
+  text-decoration-line: none;
+  display: inline-block;
+  padding-block: 12px;
+  padding-inline: 31px;
+  line-height: 25px;
+  font-size: 15px;
+  color: #e28625;
+  background: #f2f2f2;
+  border: 2px solid #e28625;
+  border-radius: 25px;
+  transition: color 0.2s linear, background-color 0.2s linear, border 0.2s linear;
+}
+
+.hero-link:hover {
+  background-color: #e28625;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.suv-link {
+  color: #006971;
+  border: 2px solid #006971;
+}
+
+.text-link:hover {
+  background-color: #006971;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+.another-link {
+  color: #004140;
+  border: 2px solid #004140;
+}
+
+.another-link:hover {
+  color: #fff;
+  background-color: #004140;
+  border: 2px solid #fff;
+}
